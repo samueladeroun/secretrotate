@@ -3,7 +3,7 @@ $secret1 = Get-AzKeyVaultSecret -VaultName "fmz-n-kv-secretrotate-01" -Name "sec
 $secret2 = Get-AzKeyVaultSecret -VaultName "fmz-n-kv-secretrotate-01" -Name "secret2" -AsPlainText
 
 #Authentication to TFC from Powershell
-$tfctoken = "20cBmCkT8K4Bsg.atlasv1.eGbWRDDWNkA4pH9rDlKzLEVYPPZ2kuILXzRdbgpW7vStDIpjSOWzzu7Sz4b4uWeflbY"
+$tfctoken = ""
 $TfcAuthenticationHeader = @{Authorization = 'Basic ' + [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(":$($tfctoken)")) }
 
 #Rest APIs to update variable set 1
