@@ -18,7 +18,7 @@ $body1 = @'
     "type": "vars",
     "attributes": {
       "key": "secret1",
-      "value": $secret, 
+      "value": $secret1, 
       "description": "",
       "sensitive": false,
       "category": "terraform",
@@ -34,7 +34,7 @@ $body2 = @'
     "type": "vars",
     "attributes": {
       "key": "secret2",
-      "value": Get-AzKeyVaultSecret -VaultName "fmz-n-kv-secretrotate-01" -Name "secret2" -AsPlainText
+      "value": $secret2,
       "description": "",
       "sensitive": false,
       "category": "terraform",
