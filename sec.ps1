@@ -1,6 +1,6 @@
 #Get Secrets from Keyvault
-$secret1 = Get-AzKeyVaultSecret -VaultName "fmz-n-kv-secretrotate-01" -Name "secret1" -AsPlainText
-$secret2 = Get-AzKeyVaultSecret -VaultName "fmz-n-kv-secretrotate-01" -Name "secret2" -AsPlainText
+$secret1 = Get-AzKeyVaultSecret -VaultName "kv1" -Name "secret1" -AsPlainText
+$secret2 = Get-AzKeyVaultSecret -VaultName "kv2" -Name "secret2" -AsPlainText
 
 #Authentication to TFC from Powershell
 $tfctoken = ""
